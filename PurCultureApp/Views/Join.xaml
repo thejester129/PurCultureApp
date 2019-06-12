@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PurCultureApp.Views.Join">
+	<Grid BackgroundColor="Black" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<ScrollView Grid.Row="1">
+			<StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+				<Label FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="WhiteSmoke" HorizontalTextAlignment="Center">
+					<Label.FormattedText>
+						<FormattedString >
+							<FormattedString.Spans>
+								<Span Text="Join The Team" FontAttributes="Bold" FontSize="35" />
+								<Span Text=" " />
+							</FormattedString.Spans>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+				
+				<Label TextColor="WhiteSmoke" Margin="50,30,50,0" FontSize="17" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+					<Label.FormattedText>
+						<FormattedString>
+							<FormattedString.Spans>
+								<Span Text="PurCulture is looking for dedicate and passionate writers, photographers, and other creatives to join our ever growing team of journalists from all around the world! " />
+
+							</FormattedString.Spans>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+
+				<Label FontSize="30"  Margin="50,30,50,0" HorizontalOptions="CenterAndExpand" TextColor="WhiteSmoke" HorizontalTextAlignment="Center">
+					<Label.FormattedText>
+						<FormattedString >
+							<FormattedString.Spans>
+								<Span Text="How To Join" FontAttributes="Bold" FontSize="20" />
+							</FormattedString.Spans>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+
+				<Label TextColor="WhiteSmoke" Margin="50,10,50,0" FontSize="17" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+					<Label.FormattedText>
+						<FormattedString>
+							<FormattedString.Spans>
+								<Span Text="Fill out the following form so PurCulture can find out a little bit about you." />
+
+							</FormattedString.Spans>
+						</FormattedString>
+					</Label.FormattedText>
+				</Label>
+				
+				<Label Text="Full Name" TextColor="White"/>
+
+				<Entry BackgroundColor="WhiteSmoke" FontSize="15" x:Name="fullName"></Entry>
+				<Label Text="Email" TextColor="White"/>
+				<Entry BackgroundColor="WhiteSmoke" FontSize="15"  x:Name="emailEntry"></Entry>
+				<Label Text="Where are you based?" TextColor="White"/>
+				<Entry BackgroundColor="WhiteSmoke" FontSize="15" Placeholder="" x:Name="location"></Entry>
+				<Label Text="Subject Area *" TextColor="White"/>
+				<Label Text="Writing/Photography" FontSize="10" TextColor="White"/>
+				<Entry BackgroundColor="WhiteSmoke" FontSize="15" Placeholder="" x:Name="subject"></Entry>
+				<Label Text="What can you bring to the team?" TextColor="White"/>
+				<Label Text="PurCulture looks for passion not past experience" FontSize="10" TextColor="White"/>
+				<Entry BackgroundColor="WhiteSmoke" FontSize="15" Placeholder="" x:Name="bring"></Entry>
+
+
+
+				<Button Margin="90,50,90,0" Text="Submit"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="Red"
+                        TextColor="White" 
+						HeightRequest="65"
+						WidthRequest="10"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+				<Label Text="" FontSize="10" TextColor="White"/>
+			</StackLayout>
+		</ScrollView>
+	</Grid>
+</ContentPage>

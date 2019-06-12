@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PurCultureApp.Views.PeaceFields"
+             Title="     🌼 PeaceFields 🌻"
+			 >
+	<ScrollView>
+		<Grid BackgroundColor="WhiteSmoke" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<ScrollView Grid.Row="1">
+				<StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+					<Label FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="Black" HorizontalTextAlignment="Center">
+						<Label.FormattedText>
+							<FormattedString >
+								<FormattedString.Spans>
+									<Span Text="WHAT IS PEACEFIELDS?" FontAttributes="Bold" FontSize="25" />
+									<Span Text=" " />
+								</FormattedString.Spans>
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+					
+					<Label TextColor="Black" Margin="30,50,30,0" FontSize="17" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+						<Label.FormattedText>
+							<FormattedString>
+								<FormattedString.Spans>
+									<Span Text="PeaceFields is a three day long party-fest extravaganza featuring a large line up of up and coming artists from across the UK. Alongside this, feel free to enjoy our Chill Zones, Private Cinema, and wide array of Street Food options. 
+
+Taking place from the 9th to the 11th of August in the beautiful Scottish countryside, PeaceFields is located half way between Glasgow and Edinburgh. Once you get to Fauldhouse train station, take advantage of our free shuttle bus to get dropped off at the festival's front gates or use our festival carpark or designated drop off zone. " />
+
+								</FormattedString.Spans>
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+					<Button Margin="90,50,90,0" Text="Tickets"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="Green"
+                        TextColor="White" 
+						HeightRequest="65"
+						WidthRequest="10"/>
+
+				</StackLayout>
+			</ScrollView>
+		</Grid>
+	</ScrollView>
+</ContentPage>

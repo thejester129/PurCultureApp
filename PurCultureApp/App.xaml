@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PurCultureApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+			<Color x:Key="NavigationPrimary">#cc0000</Color>
+			<Color x:Key="BGMain">#cc0000</Color>
+			<Color x:Key="BGPage">Black</Color>
+			<Color x:Key="TextMain">#f2f2f2</Color>
+			<Color x:Key="TextPage">#f2f2f2</Color>
+
+
+
+			<Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{DynamicResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="WhiteSmoke" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

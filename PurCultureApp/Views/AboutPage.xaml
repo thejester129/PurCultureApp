@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PurCultureApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:PurCultureApp.ViewModels"
+             Title="PURCULTURE">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    
+    <Grid BackgroundColor="Black" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="30" HorizontalOptions="CenterAndExpand" TextColor="WhiteSmoke" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString >
+                            <FormattedString.Spans>
+                                <Span Text="DeepCuts" FontAttributes="Bold" FontSize="35" />
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+				<Label HorizontalOptions="CenterAndExpand" TextColor="WhiteSmoke">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+
+								<Span Text="Presented By PurCulture" FontAttributes="Bold" FontSize="20"/>
+								<Span Text=" " />
+
+							</FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+				<Label TextColor="WhiteSmoke" Margin="50,50,50,0" FontSize="17" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+								<Span Text="DeepCuts is a weekly interview/live lounge hybrid video series featuring incredible solo artists, bands, and musicians from all levels of the music scene. " />
+								<Span Text=" " />
+
+							</FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="90,50,90,0" Text="Watch the Series"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="Red"
+                        TextColor="White" 
+						HeightRequest="65"
+						WidthRequest="10"/>
+						
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

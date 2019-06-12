@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PurCultureApp.Views.ItemDetailPage"
+             Title="{Binding Title}">
+	<ScrollView>
+    <StackLayout Spacing="20" Padding="15" BackgroundColor="{StaticResource BGPage}">
+        <Label Text="" FontSize="Medium" />
+			<Label Text="{Binding Item.Text}" FontSize="Large" TextColor="{StaticResource TextPage}"/>
+			<Label Text="" FontSize="Medium" />
+			<Label Text="{Binding Item.Description}" FontSize="Medium" TextColor="{StaticResource TextPage}"/>
+			<Image HeightRequest="200" WidthRequest="300" Source="{Binding Image}"/>
+
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
