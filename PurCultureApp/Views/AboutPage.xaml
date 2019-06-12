@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PurCultureApp.Views.AboutPage"
              xmlns:vm="clr-namespace:PurCultureApp.ViewModels"
-             Title="PURCULTURE">
+             Title="DeepCuts">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />

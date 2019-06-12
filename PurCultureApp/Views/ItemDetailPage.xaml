@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PurCultureApp.Views.ItemDetailPage"
-             Title="{Binding Title}">
+             Title="PURCULTURE">
 	<ScrollView>
     <StackLayout Spacing="20" Padding="15" BackgroundColor="{StaticResource BGPage}">
         <Label Text="" FontSize="Medium" />

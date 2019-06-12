@@ -15,6 +15,8 @@ namespace PurCultureApp.ViewModels
 	public class ItemDetailViewModel : BaseViewModel
 	{
 		public Item Item { get; set; }
+		public string Link { get; set; }
+
 		public Command LoadItemsCommand { get; set; }
 
 		public ItemDetailViewModel(Item item = null)
@@ -36,8 +38,10 @@ namespace PurCultureApp.ViewModels
 		{
 			
 			var website = "https://purculture.com" + item.Link;
+			Link = website;
 			var web = new HttpClient();
 			var html =   web.GetStringAsync(website);
+			
 			var htmlDocument = new HtmlDocument();
 			htmlDocument.LoadHtml(html.Result);
 			

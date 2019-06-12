@@ -15,11 +15,15 @@ namespace PurCultureApp.Views
 
 		public ItemDetailPage(ItemDetailViewModel viewModel)
 		{
+
 			InitializeComponent();
 
 			var browser = new WebView();
-			browser.Source = "https://purculture.com/whatsnew//review-stoned-immaculate-the-bungalow-18519";
+			var link = viewModel.Link;
+			browser.Source = link;
 			Content = browser;
+
+
 			BindingContext = this.viewModel = viewModel;
 
 		}
@@ -27,7 +31,15 @@ namespace PurCultureApp.Views
 		public ItemDetailPage()
 		{
 			InitializeComponent();
-
+			//if error with viewmodel
 			var item = new Item
 			{
-				Text = "I
+				Text = "Aw naw",
+				Description = "Thats a big oof"
+			};
+
+			viewModel = new ItemDetailViewModel(item);
+			BindingContext = viewModel;
+		}
+	}
+}
